@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package userservice;
+
+import "google/protobuf/empty.proto";
+
+service UserService {
+  rpc GetUserbyId (GetUserbyIdRequest) returns (GetUserbyIdResponse);
+  rpc GetAllUsers (google.protobuf.Empty) returns (GetAllUsersResponse);
+}
+
+message GetUserbyIdRequest {
+  int32 user_id = 1;
+}
+
+message GetUserbyIdResponse {
+  int32 user_id = 1;
+  string name = 2;
+  int32 age = 3;
+}
+
+message GetAllUsersResponse {
+  repeated GetUserbyIdResponse users = 1;
+}

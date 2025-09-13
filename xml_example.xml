@@ -1,0 +1,12 @@
+<person>
+    <id>1</id>
+    <first_name>Dima</first_name>
+    <last_name>Litvinov</last_name>
+    <email>dima.litv@example.com</email>
+    <age>34</age>
+    <address>
+        <street>Main Street</street>
+        <city>Moscow</city>
+        <zip>143090</zip>
+    </address>
+</person>
